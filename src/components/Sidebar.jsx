@@ -1,17 +1,34 @@
-import React from 'react'
-import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from '@mui/material'
-import { Inbox,Home,Article,Person,Group,AccountBox,Storefront,Settings, ModeNight } from '@mui/icons-material'
-function Sidebar({mode,setMode}) {
+import React from "react";
+import {
+  Box,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Switch,
+} from "@mui/material";
+import {
+  Home,
+  Article,
+  Person,
+  Group,
+  AccountBox,
+  Storefront,
+  Settings,
+  ModeNight,
+} from "@mui/icons-material";
+function Sidebar({ mode, setMode }) {
   return (
-    <Box  flex={1} p={2}
-    sx={
-        {
-            display:{xs:'none', sm:'block'}
-        }
-    }
+    <Box
+      flex={1}
+      p={2}
+      sx={{
+        display: { xs: "none", sm: "block" },
+      }}
     >
-      <Box position="fixed" marginTop='64px'>
-      <List disablePadding>
+      <Box position="fixed" marginTop="64px">
+        <List disablePadding>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -20,8 +37,8 @@ function Sidebar({mode,setMode}) {
               <ListItemText primary="Homepage" />
             </ListItemButton>
           </ListItem>
-      </List>
-      <List disablePadding>
+        </List>
+        <List disablePadding>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -30,8 +47,8 @@ function Sidebar({mode,setMode}) {
               <ListItemText primary="pages" />
             </ListItemButton>
           </ListItem>
-      </List>
-      <List disablePadding>
+        </List>
+        <List disablePadding>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -40,8 +57,8 @@ function Sidebar({mode,setMode}) {
               <ListItemText primary="Groups" />
             </ListItemButton>
           </ListItem>
-      </List>
-      <List disablePadding>
+        </List>
+        <List disablePadding>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -50,8 +67,8 @@ function Sidebar({mode,setMode}) {
               <ListItemText primary="MarketPlace" />
             </ListItemButton>
           </ListItem>
-      </List>
-      <List disablePadding>
+        </List>
+        <List disablePadding>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -60,8 +77,8 @@ function Sidebar({mode,setMode}) {
               <ListItemText primary="Friends" />
             </ListItemButton>
           </ListItem>
-      </List>
-      <List disablePadding>
+        </List>
+        <List disablePadding>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -70,8 +87,8 @@ function Sidebar({mode,setMode}) {
               <ListItemText primary="Settings" />
             </ListItemButton>
           </ListItem>
-      </List>
-      <List disablePadding>
+        </List>
+        <List disablePadding>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -80,22 +97,22 @@ function Sidebar({mode,setMode}) {
               <ListItemText primary="Profile" />
             </ListItemButton>
           </ListItem>
-      </List>
-      <List disablePadding>
+        </List>
+        <List disablePadding>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <ModeNight />
               </ListItemIcon>
-              <Switch 
-              onChange={e=>setMode(mode==='light'?'dark':'light')}
+              <Switch
+                onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
               />
             </ListItemButton>
           </ListItem>
-      </List>
+        </List>
       </Box>
     </Box>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;

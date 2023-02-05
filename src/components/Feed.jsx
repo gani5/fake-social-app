@@ -1,7 +1,6 @@
 import React from 'react'
-import { Avatar, Box, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, IconButton, Typography } from '@mui/material'
+import { Avatar, Box, Card, CardActions, CardContent, CardHeader, CardMedia, IconButton, Typography } from '@mui/material'
 import { ExpandMore, ExpandMoreOutlined, Favorite, MoreVert, Share } from '@mui/icons-material'
-import { red } from '@mui/material/colors'
 function Data() {
   return (
     <Box flex={4} p={2} >
